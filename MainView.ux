@@ -1,0 +1,5 @@
+<App>
+	<Panel Width="80%" Height="50">
+		<KakaoLoginButton />
+	</Panel>
+</App>
