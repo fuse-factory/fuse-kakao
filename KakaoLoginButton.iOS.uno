@@ -7,7 +7,7 @@ using Fuse.Controls;
 using Fuse.Controls.Native;
 using Fuse.Controls.Native.iOS;
 
-extern(!iOS) class KakaoLoginButtonView
+extern(!iOS && !Android) class KakaoLoginButtonView
 {
 }
 

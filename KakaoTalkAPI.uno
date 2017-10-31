@@ -21,3 +21,14 @@ extern(iOS) static class KakaoTalkAPI
 		} authType:(KOAuthType)KOAuthTypeTalk, nil];
 	@}
 }
+
+[Require("Gradle.Repository", "maven { url 'http://devrepo.kakao.com:8088/nexus/content/groups/public/' }")]
+[Require("Gradle.Dependency.Compile", "com.kakao.sdk:usermgmt:1.5.1@aar")]
+extern (Android) static class KakaoTalkAPI
+{
+	[Foreign(Language.Java)]
+	public static void Login(Action successCallback, Action<string> errorCallback)
+	@{
+		//perform login here
+	@}
+}

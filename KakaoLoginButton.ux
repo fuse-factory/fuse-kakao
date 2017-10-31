@@ -5,5 +5,6 @@
 	</Panel>
 
 	<KakaoLoginButtonView ux:Condition="iOS" ux:Template="iOSAppearance" />
+	<KakaoLoginButtonView ux:Condition="Android" ux:Template="iOSAppearance" />
 
 </KakaoLoginButtonBase>
