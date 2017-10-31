@@ -9,8 +9,6 @@ using Fuse.Controls.Native.iOS;
 
 extern(!iOS) class KakaoLoginButtonView
 {
-	//[UXConstructor]
-	//public KakaoLoginButtonView([UXParameter("Host")]IDatePickerHost host) { }
 }
 
 [Require("Source.Include", "UIKit/UIKit.h")]
@@ -24,18 +22,7 @@ extern(iOS) class KakaoLoginButtonView : LeafView
 	static ObjC.Object Create()
 	@{
 		UIButton* kakaoLoginButton = [[KOLoginButton alloc] init];
-		kakaoLoginButton.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleWidth;
 		return kakaoLoginButton;
 	@}
-
-	public void OnRooted()
-	{
-		// Do nothing
-	}
-
-	public void OnUnrooted()
-	{
-		// Do nothing
-	}
 }
 

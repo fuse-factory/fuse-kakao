@@ -1,7 +1,15 @@
 <App>
-	<Panel Width="80%" Height="50">
+	<!--<Panel Width="80%" Height="50">
 		<NativeViewHost>
 			<KakaoLoginButton />
 		</NativeViewHost>
-	</Panel>
+	</Panel>-->
+
+	<ClientPanel>
+
+		<Panel>
+			<Button Text="LOGIN" Clicked="LoginClicked" />
+		</Panel>
+
+	</ClientPanel>
 </App>

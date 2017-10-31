@@ -1,0 +1,27 @@
+<Extensions Backend="CPlusPlus">
+  <Require Condition="iOS" Xcode.Plist.Element>
+    <![CDATA[
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>kakaob7a03939b7af1df2a0fb7ed4824eb2d2</string>
+            </array>
+        </dict>
+    </array>
+    <key>KAKAO_APP_KEY</key>
+    <string>b7a03939b7af1df2a0fb7ed4824eb2d2</string>
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+        <string>kakaob7a03939b7af1df2a0fb7ed4824eb2d2</string>
+        <string>kakaokompassauth</string>
+        <string>storykompassauth</string>
+        <string>kakaotalk-4.5.0</string>
+        <string>kakaostory-2.9.0</string>
+    </array>
+    ]]>
+  </Require>
+</Extensions>

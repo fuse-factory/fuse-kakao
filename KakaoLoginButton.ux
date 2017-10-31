@@ -1,7 +1,9 @@
 <KakaoLoginButtonBase ux:Class="KakaoLoginButton">
+
 	<Panel ux:Template="GraphicsAppearance" Margin="4" Background="#eee" Padding="20,15">
 		<Text Value="Kakao login" />
 	</Panel>
 
 	<KakaoLoginButtonView ux:Condition="iOS" ux:Template="iOSAppearance" />
+
 </KakaoLoginButtonBase>
