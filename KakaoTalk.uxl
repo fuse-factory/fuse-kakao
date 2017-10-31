@@ -24,4 +24,16 @@
     </array>
     ]]>
   </Require>
+  <Require Condition="Android" Android.ResStrings.Declaration>
+    <![CDATA[
+    <string name="kakao_app_key">b7a03939b7af1df2a0fb7ed4824eb2d2</string>
+    ]]>
+  </Require>
+  <Require Condition="Android" AndroidManifest.ApplicationElement>
+    <![CDATA[
+    <meta-data
+        android:name="com.kakao.sdk.AppKey"
+        android:value="@string/kakao_app_key" />
+    ]]>
+  </Require>
 </Extensions>
