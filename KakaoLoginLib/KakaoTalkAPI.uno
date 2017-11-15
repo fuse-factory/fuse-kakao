@@ -9,12 +9,12 @@ using Fuse;
 extern(iOS) static class KakaoTalkAPI
 {
 	[Foreign(Language.ObjC)]
-	public static void Login(Action successCallback, Action<string> errorCallback)
+	public static void Login(Action<string> successCallback, Action<string> errorCallback)
 	@{
 		[[KOSession sharedSession] close];
 		[[KOSession sharedSession] openWithCompletionHandler:^(NSError *error) {
 			if ([[KOSession sharedSession] isOpen]) {
-				successCallback();
+				successCallback(@"Succeeded to login");
 			} else {
 				errorCallback([NSString stringWithFormat:@"Failed to login: %@", error]);
 			}

@@ -1,15 +1,24 @@
 <App>
-	<!--<Panel Width="80%" Height="50">
-		<NativeViewHost>
-			<KakaoLoginButton />
-		</NativeViewHost>
-	</Panel>-->
 
-	<ClientPanel>
+	<JavaScript>
+		var KakaoTalk = require("KakaoTalk");
+		module.exports.doKakaoLogin = function() {
+			KakaoTalk.doLogin();
+		};
+	</JavaScript>
+
+	<Panel Width="95%" Height="50">
+		<NativeViewHost>
+			<KakaoLoginButton HitTestMode="LocalBounds" Clicked="{doKakaoLogin}" />
+		</NativeViewHost>
+	</Panel>
+
+<!-- 	<ClientPanel>
 
 		<Panel>
 			<Button Text="LOGIN" Clicked="LoginClicked" />
 		</Panel>
 
 	</ClientPanel>
+ -->
 </App>

@@ -9,7 +9,7 @@ using Fuse.Controls.Panel;
 
 public class KakaoLoginButtonBase : Fuse.Controls.Panel
 {
-	KakaoLoginButtonView LoginView
+	extern(iOS && Android) KakaoLoginButtonView LoginView
 	{
 		get { return (KakaoLoginButtonView)ViewHandle; }
 	}

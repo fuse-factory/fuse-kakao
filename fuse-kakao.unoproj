@@ -4,6 +4,9 @@
     "Fuse",
     "FuseJS"
   ],
+  "Projects": [
+    "KakaoLoginLib/KakaoLoginLib.unoproj",
+  ],
   "Includes": [
     "*",
   ]
