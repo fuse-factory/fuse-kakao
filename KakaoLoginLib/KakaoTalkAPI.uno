@@ -27,7 +27,7 @@ extern(iOS) static class KakaoTalkAPI
 extern (Android) static class KakaoTalkAPI
 {
 	[Foreign(Language.Java)]
-	public static void Login(Action successCallback, Action<string> errorCallback)
+	public static void Login(Action<string> successCallback, Action<string> errorCallback)
 	@{
 		//perform login here
 	@}

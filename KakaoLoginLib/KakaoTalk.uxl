@@ -8,15 +8,15 @@
             <string>Editor</string>
             <key>CFBundleURLSchemes</key>
             <array>
-                <string>kakaob7a03939b7af1df2a0fb7ed4824eb2d2</string>
+                <string>kakao@(Kakao.AppKey)</string>
             </array>
         </dict>
     </array>
     <key>KAKAO_APP_KEY</key>
-    <string>b7a03939b7af1df2a0fb7ed4824eb2d2</string>
+    <string>@(Kakao.AppKey)</string>
     <key>LSApplicationQueriesSchemes</key>
     <array>
-        <string>kakaob7a03939b7af1df2a0fb7ed4824eb2d2</string>
+        <string>kakao@(Kakao.AppKey)</string>
         <string>kakaokompassauth</string>
         <string>storykompassauth</string>
         <string>kakaotalk-4.5.0</string>
@@ -24,11 +24,13 @@
     </array>
     ]]>
   </Require>
+
   <Require Condition="Android" Android.ResStrings.Declaration>
     <![CDATA[
-    <string name="kakao_app_key">b7a03939b7af1df2a0fb7ed4824eb2d2</string>
+    <string name="kakao_app_key">@(Kakao.AppKey)</string>
     ]]>
   </Require>
+
   <Require Condition="Android" AndroidManifest.ApplicationElement>
     <![CDATA[
     <meta-data

@@ -12,5 +12,6 @@
     "**.uno",
     "**.uxl",
     "**.ux",
+    "**.java:Java:Android"
   ],
 }

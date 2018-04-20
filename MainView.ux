@@ -13,12 +13,4 @@
 		</NativeViewHost>
 	</Panel>
 
-<!-- 	<ClientPanel>
-
-		<Panel>
-			<Button Text="LOGIN" Clicked="LoginClicked" />
-		</Panel>
-
-	</ClientPanel>
- -->
 </App>

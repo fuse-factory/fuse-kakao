@@ -4,6 +4,7 @@ using Fuse;
 using Fuse.Scripting;
 using Uno.Collections;
 using Uno.Threading;
+using Uno.Permissions;
 
 [UXGlobalModule]
 public class KakaoTalkJavaScript : NativeModule
